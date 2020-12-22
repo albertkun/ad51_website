@@ -114,6 +114,7 @@
         var baseMaps = {};
         L.control.layers(baseMaps,{'<img src="legend/CaliforniaAssemblyDistricts_1.png" /> California Assembly District 51': layer_CaliforniaAssemblyDistricts_1,"Basemap": layer_Basemap_0,},{collapsed:false}).addTo(map);
         setBounds();
+        map.fitBounds(layer_CaliforniaAssemblyDistricts_1.getBounds());
         map.setMaxBounds(map.getBounds());
         </script>
     </body>
