@@ -112,8 +112,9 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/CaliforniaAssemblyDistricts_1.png" /> California Assembly Districts': layer_CaliforniaAssemblyDistricts_1,"Basemap": layer_Basemap_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/CaliforniaAssemblyDistricts_1.png" /> California Assembly District 51': layer_CaliforniaAssemblyDistricts_1,"Basemap": layer_Basemap_0,},{collapsed:false}).addTo(map);
         setBounds();
+        map.setMaxBounds(map.getBounds());
         </script>
     </body>
 </html>
